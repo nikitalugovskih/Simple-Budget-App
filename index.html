@@ -8,107 +8,120 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
-<div class="container-xxl bg-light">
-<header>
-  <div>
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand fw-bold justify-content-between align-items-center p-2 mb-1">
-        <h2 class="container align-items-center p-2">Budget planner <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack " viewBox="0 0 16 16">
-            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-            <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
-          </svg></h2>
-      </a>
-  </nav>
+<body>
+  <div class="container budget">
+  <div class="d-flex align-items-center mb-2">
+    <h2>Budget planner</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash-stack px-3" viewBox="0 0 16 16">
+        <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+        <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"></path>
+      </svg>
 </div>
-</header>
 
 
+<div class="d-flex flex-column justify-content-between mb-1">
+  <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-1" type="button">Budget: $2000 <a>Edit</a></button>
+  <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-1" type="button">Remaining: $1040</button>
+  <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-3" type="button">Spent so far: $960</button>
+</div>
+</div>
 
-<div>
-    <div class="d-flex flex-column justify-content-between p-2 mb-1">
-        <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-1" type="button">Budget: $2000 <a>Edit</a></button>
-        <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-1" type="button">Remaining: $1040</button>
-        <button class="btn btn-primary d-flex justify-content-between align-items-center p-2 mb-1" type="button">Spent so far: $960</button>
-      </div>
+<div class="container expenses">
+<div class="expenses d-flex align-items-center">
+  <h2 class="expenses-title me-2">Expenses</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+  </svg>
+</div>
 
-      <div class="container-expenses">
-      <nav class="navbar-brand fw-bold justify-content-between align-items-center p-2 mb-1">
-          <h2 class="container align-items-center p-2">Expenses <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
-            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
-          </svg></h2>
-        <form class="container-fluid">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search expense ..." aria-label="Username" aria-describedby="basic-addon1">
-          </div>
-        </form>
-        </nav>
+<div class="container-input">
+  <input type="text" class="form-control mb-2" placeholder="Search expense ..." aria-label="Username" aria-describedby="basic-addon1">
+</div>
 
-        <ul class="list-group justify-content-between p-2 mb-1">
-            <li class="list-group-item d-flex justify-content-lg-center align-items-center">
-                <div class="ms-2 me-auto">
-                  Shopping
-                </div>
-                <span class="badge bg-primary rounded-pill">$50</span>
-                <button type="button" class="btn-close m-2" aria-label="Close"></button>
-              </li>
-        <li class="list-group-item d-flex justify-content-lg-center align-items-center">
-                <div class="ms-2 me-auto">
-                Holiday
-                </div>
-                <span class="badge bg-primary rounded-pill">$300</span>
-                <button type="button" class="btn-close m-2" aria-label="Close"></button>
-              </li>
-        <li class="list-group-item d-flex justify-content-lg-center align-items-center">
-                <div class="ms-2 me-auto">
-                Transportation
-                </div>
-                <span class="badge bg-primary rounded-pill">$70</span>
-                <button type="button" class="btn-close m-2" aria-label="Close"></button>
-              </li>
+<div class="expenses-list">
 
-
-        <li class="list-group-item d-flex justify-content-lg-center align-items-center">
-                <div class="ms-2 me-auto">
-                Fuel
-                </div>
-                <span class="badge bg-primary rounded-pill">$40</span>
-                <button type="button" class="btn-close m-2" aria-label="Close"></button>
-              </li>
-        <li class="list-group-item d-flex justify-content-lg-center align-items-center">
-                <div class="ms-2 me-auto">
-                Child care
-                </div>
-                <span class="badge bg-primary rounded-pill">$500</span>
-                <button type="button" class="btn-close m-2" aria-label="Close"></button>
-              </li>
-          </ul>
-      </div>
-      
-
-        <div class="container-add expenses">
-          <nav class="navbar-brand fw-bold justify-content-between align-items-center p-2 mb-1">
-            <h2>Add expenses <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-                <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-              </svg></h2>
-              <form class="container-fluid">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Enter name ..." aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </form>
-              <form class="container-fluid mt-2">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Enter cost ..." aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-              </form>
-          </nav>
-
-        <div class="d-grid gap-2">
-            <button class="btn btn-primary mb-5" type="button">Save</button>
-          </div>
+  <ul class="list-group justify-content-between mb-1">
+    <li class="list-group-item d-flex justify-content-lg-center align-items-center">
+        <div class="ms-2 me-auto">
+          Shopping
         </div>
+        <span class="badge bg-primary rounded-pill">$50</span>
+        <button type="button" class="btn-close m-2" aria-label="Close"></button>
+      </li>
+<li class="list-group-item d-flex justify-content-lg-center align-items-center">
+        <div class="ms-2 me-auto">
+        Holiday
         </div>
+        <span class="badge bg-primary rounded-pill">$300</span>
+        <button type="button" class="btn-close m-2" aria-label="Close"></button>
+      </li>
+<li class="list-group-item d-flex justify-content-lg-center align-items-center">
+        <div class="ms-2 me-auto">
+        Transportation
         </div>
+        <span class="badge bg-primary rounded-pill">$70</span>
+        <button type="button" class="btn-close m-2" aria-label="Close"></button>
+      </li>
+
+
+<li class="list-group-item d-flex justify-content-lg-center align-items-center">
+        <div class="ms-2 me-auto">
+        Fuel
+        </div>
+        <span class="badge bg-primary rounded-pill">$40</span>
+        <button type="button" class="btn-close m-2" aria-label="Close"></button>
+      </li>
+<li class="list-group-item d-flex justify-content-lg-center align-items-center">
+        <div class="ms-2 me-auto">
+        Child care
+        </div>
+        <span class="badge bg-primary rounded-pill">$500</span>
+        <button type="button" class="btn-close m-2" aria-label="Close"></button>
+      </li>
+  </ul>
+</div>
+
+</div>
+</div>
+
+<div class="container expense">
+<div class="container d-flex align-items-center me-2" style="padding-left: 0px;">
+  <h2 class="title-expenses me-2">Add expense</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+  </svg>
+</div>
+
+
+<div class="input-container align-items-center ">
+  <input class="form-control mb-2" type="text" placeholder="Enter name ..." aria-label="default input example">
+
+
+  <input type="text" class="form-control mb-2" placeholder="Enter cost ..." aria-label="Username" aria-describedby="basic-addon1">
+</div>
+
+<div class="d-grid gap-2">
+  <button class="btn btn-primary mb-5" type="button">Save</button>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
     </html>
